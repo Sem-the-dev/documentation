@@ -1,1 +1,61 @@
-# documentation
+# About Our Neighbourhood API
+
+Our Neighbourhood API allows you to store and look up data on your local neighbourhood including people's address, number of people in each household, their names and age.
+
+Our Neighbourhood API is REST-based, mainly using POST and GET.
+
+Our Neighbourhood API returns reults in various formats including JSON.
+
+### base 
+https://our-neighbourhood-api/
+
+
+
+
+### Authentication 
+To run a successful API call, you will need to pass your API Key in the apikey query parameter. Your API Key should automatically appear in all URLs throughout this portal.
+
+Example: https://our-neighbourhood-api/people?apikey={apikey}
+
+Without a valid API Key, you will receive a 401 Status Code with the following response:
+
+
+
+### Errors
+
+When an error occurs during an API request, you will receive:
+
+An HTTP error status (in the 400-500 range)
+A JSON response containing more information about the error
+
+A typical error response looks like this:
+{
+"errors": [
+{
+"status": 404,
+"title": "Route Not Found"
+}
+]
+}
+
+
+### Adding information
+
+Method: POST
+Summary: add household
+Description: add information about people and their households
+
+/
+
+### Neighbourhood Search
+
+Method: GET
+Summary: household search
+Description: find households by searching their name, this will return the house, address and it's owner
+
+
+
+
+Method: GET
+Summary: people search
+Description: find people within certain age brackets and with specific household sizes
