@@ -85,4 +85,7 @@ CREATE TABLE household(
     
 );
 
-[![image-2.png](https://i.postimg.cc/tCR48dHR/image-2.png)](https://postimg.cc/DmDhXXZR)
+
+### see table
+https://postimg.cc/DmDhXXZR 
+https://i.postimg.cc/DwqpsG8s/image-3.png
